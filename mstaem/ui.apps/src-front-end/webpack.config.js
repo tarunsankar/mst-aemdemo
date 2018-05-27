@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({ // define where to save the file
-      filename: '../src/main/content/jcr_root/apps/mstaem/clientlibs/clientlib-base/css/style.css',
+      filename: '../target/classes/apps/mstaem/clientlibs/clientlib-base/css/style.css',
       allChunks: true,
     }),
   ],
