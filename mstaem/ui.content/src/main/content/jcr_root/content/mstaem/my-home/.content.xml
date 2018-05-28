@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-05-27T21:54:16.453-07:00"
+        cq:lastModified="{Date}2018-05-27T23:13:48.962-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/mstaem/settings/wcm/templates/content-page"
         jcr:primaryType="cq:PageContent"
@@ -13,7 +13,43 @@
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <header
+                    jcr:created="{Date}2018-05-27T23:12:32.521-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-05-27T23:12:32.521-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mstaem/components/content/header"/>
+                <carousel
+                    jcr:created="{Date}2018-05-27T23:12:52.936-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-05-27T23:12:52.936-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mstaem/components/content/carousel"/>
+                <about
+                    jcr:created="{Date}2018-05-27T23:13:19.708-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-05-27T23:13:19.708-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mstaem/components/content/about"/>
+                <welcome
+                    jcr:created="{Date}2018-05-27T23:13:33.031-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-05-27T23:13:33.031-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mstaem/components/content/welcome"/>
+                <footer
+                    jcr:created="{Date}2018-05-27T23:13:48.961-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-05-27T23:13:48.961-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mstaem/components/content/footer"/>
+            </responsivegrid>
         </root>
     </jcr:content>
 </jcr:root>
