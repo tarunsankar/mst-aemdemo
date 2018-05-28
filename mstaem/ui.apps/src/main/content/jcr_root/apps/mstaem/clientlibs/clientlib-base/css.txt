@@ -14,13 +14,8 @@
 # limitations under the License.
 ###############################################################################
 #base=css
-bootstrap.min.css
-materialdesignicons.min.css
-material.min.css
-ripples.min.css
-owl.carousel.css
-magnific-popup.css
-slicknav.css
-animate.css
 style.css
 responsive.css
+
+#base=css/colors
+indigo.css

@@ -6,5 +6,20 @@
         jcr:title="mstaem">
         <folderThumbnail/>
     </jcr:content>
-    <asset.jpg/>
+    <bicycle.png/>
+    <car.png/>
+    <cta-bg.jpg/>
+    <logo.png/>
+    <map-marker.png/>
+    <page-title-bg.jpg/>
+    <vespa-1.png/>
+    <about/>
+    <blog/>
+    <clients/>
+    <gallery/>
+    <instagram/>
+    <portfolio/>
+    <slider/>
+    <team/>
+    <testimonial/>
 </jcr:root>

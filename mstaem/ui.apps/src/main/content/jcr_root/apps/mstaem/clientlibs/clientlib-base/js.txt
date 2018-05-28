@@ -15,21 +15,6 @@
 ###############################################################################
 
 #base=js
-jquery-min.js
-popper.min.js
-bootstrap.min.js
-jquery.mixitup.min.js
-jquery.inview.js
-jquery.counterup.min.js
-scroll-top.js
-smoothscroll.js
-material.min.js
-ripples.min.js
-owl.carousel.min.js
 form-validator.min.js
 contact-form-script.min.js
-wow.js
-jquery.vide.js
-jquery.magnific-popup.min.js
-jquery.slicknav.js
 main.js
