@@ -86,6 +86,12 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.models.api</artifactId>
         </dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.8.2</version>
+		</dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

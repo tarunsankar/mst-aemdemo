@@ -1,40 +1,34 @@
 <!-- About Section -->
 <section class="Material-about-section section-padding">
   <div class="container">
-    <div class="row">
+  	<div data-sly-test="${wcmmode.edit}" class="cq-placeholder cq-marker-start">Start of About Component</div>
+    <div class="row" data-sly-test="${properties.title1}" data-sly-use.aboutModel="com.mst.core.models.AboutModel">
       <!-- Single About -->
       <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".2s">
         <div class="about-single">
-          <i class="material-icons mdi mdi-layers"></i>
-          <h2 class="subtitle">Bootstrap 4</h2>
-          <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
+          <i class="material-icons mdi ${aboutModel.icons1}"></i>
+          <h2 class="subtitle">${aboutModel.title1}</h2>
+          <p>${aboutModel.description1}</p>
         </div>
       </div>
       <!-- Single About -->
       <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
         <div class="about-single">
-          <i class="material-icons mdi mdi-cards-playing-outline"></i>
-          <h2 class="subtitle">Material Design</h2>
-          <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
+          <i class="material-icons mdi ${properties.icons2}"></i>
+          <h2 class="subtitle">${properties.title2}</h2>
+          <p>${properties.description2}</p>
         </div>
       </div>
       <!-- Single About -->
-      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
+      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s" data-sly-list="${aboutModel.aboutLinks}">
         <div class="about-single">
-          <i class="material-icons mdi mdi-alarm-check"></i>
-          <h2 class="subtitle">Fast and Clean</h2>
-          <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
-        </div>
-      </div>
-      <!-- Single About -->
-      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".5s">
-        <div class="about-single">
-          <i class="material-icons mdi mdi-responsive"></i>
-          <h2 class="subtitle">Fully Responsive</h2>
-          <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
+          <i class="material-icons mdi ${item.icons}"></i>
+          <h2 class="subtitle">${item.title}</h2>
+          <p>${item.description}</p>
         </div>
       </div>
     </div>
+  	<div data-sly-test="${wcmmode.edit}" class="cq-placeholder cq-marker-end">End of About Component</div>
   </div>
 </section>
 <!-- About Section End -->
