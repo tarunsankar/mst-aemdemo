@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sections
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sections"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            acs-commons-nested=""
+                                            name="./links">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./title"
+                                                            required="{Boolean}true"/>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            fieldLabel="Description"
+                                                            name="./description"/>
+                                                        <icons
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Icons"
+                                                            name="./icons">
+                                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                                <layers
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Layers"
+                                                                    value="mdi-layers"/>
+                                                                <cards
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Cards"
+                                                                    value="mdi-cards-playing-outline"/>
+			                                                    <alarm
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Alarm"
+			                                                        value="mdi-alarm-check"/>
+			                                                    <responsive
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Responsive"
+			                                                        value="mdi-responsive"/>
+                                                            </items>
+                                                        </icons>
+                                                        <delay
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Delay"
+                                                            name="./delay">
+                                                            <items jcr:primaryType="cq:WidgetCollection">
+			                                                    <two
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Two Second"
+			                                                        value=".2s"/>
+                                                                <three
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Three Second"
+                                                                    value=".3s"/>
+                                                                <four
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Four Second"
+                                                                    value=".4s"/>
+			                                                    <five
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Five Second"
+			                                                        value=".5s"/>
+                                                            </items>
+                                                        </delay>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </links>
+                                </items>
+                            </column>
+                        </items>
+                    </sections>
+					<versions jcr:primaryType="nt:unstructured"
+						jcr:title="Versions"
+						sling:resourceType="granite/ui/components/foundation/container">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<alignment jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/foundation/include"
+										path="/apps/mstaem/components/reference/dialog/touchui/dialog_parts/versioning" />
+								</items>
+							</column>
+						</items>
+					</versions>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
