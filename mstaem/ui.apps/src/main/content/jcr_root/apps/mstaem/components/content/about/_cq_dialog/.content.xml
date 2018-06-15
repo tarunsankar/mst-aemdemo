@@ -14,7 +14,7 @@
                 <items jcr:primaryType="nt:unstructured">
                     <sections
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Other Sections"
+                        jcr:title="Sections"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <layout
                             jcr:primaryType="nt:unstructured"
